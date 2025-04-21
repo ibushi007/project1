@@ -1,0 +1,43 @@
+#container {
+  text-align: center;
+}
+
+.try .btn {
+  position: relative;
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 300px;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.try .btn.cubic span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  line-height: 48px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.try .btn.cubic .hovering {
+  background-color: black;
+  color: white;
+  transform: rotateX(90deg);
+  transform-origin: center center -25px;
+}
+.try .btn.cubic .default {
+  background-color: white;
+  color: black;
+  transform: rotateX(0);
+  transform-origin: center center -25px;
+}
+.try .btn.cubic:hover .hovering {
+  transform: rotateX(0);
+}
+.try .btn.cubic:hover .default {
+  transform: rotateX(-90deg);
+}/*# sourceMappingURL=try.css.map */

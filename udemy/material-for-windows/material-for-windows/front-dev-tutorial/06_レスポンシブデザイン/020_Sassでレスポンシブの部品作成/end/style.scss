@@ -1,0 +1,36 @@
+@use "mq" as *;
+// モバイル用のスタイル
+h1 {
+  color: red;
+  background: yellow;
+
+  @include mq(sm) {
+    color: blue;
+  }
+
+  @include mq(md) {
+    color: purple;
+  }
+  
+  @include mq(lg) {
+    color: green;
+  }
+  
+  @include mq(xl) {
+    color: orange;
+  }
+}
+
+// // デスクトップ用のスタイル
+// @media (min-width: 601px) {
+//   h1 {
+//     color: blue;
+//   }
+// }
+
+// Retinaディスプレイ用のメディアクエリ
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+//   h1 {
+//     color: purple;
+//   }
+// }

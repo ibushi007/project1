@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+}
+
+.rect {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation: sk-bouncedelay 1.4s;
+}
+
+@keyframes sk-bouncedelay {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=loader.css.map */

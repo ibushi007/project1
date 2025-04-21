@@ -1,0 +1,43 @@
+#container {
+  text-align: center;
+}
+
+.answer .btn {
+  position: relative;
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 300px;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.answer .btn.cubic span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  line-height: 48px;
+  text-align: center;
+  transition: all 0.3s;
+  transform-origin: center center -25px;
+}
+.answer .btn.cubic .hovering {
+  background-color: black;
+  color: white;
+  transform: rotateX(90deg);
+}
+.answer .btn.cubic .default {
+  background-color: white;
+  color: black;
+  transform: rotateX(0);
+}
+.answer .btn.cubic:hover .hovering {
+  transform: rotateX(0);
+}
+.answer .btn.cubic:hover .default {
+  transform: rotateX(-90deg);
+}/*# sourceMappingURL=answer.css.map */

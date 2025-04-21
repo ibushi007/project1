@@ -1,0 +1,13 @@
+.parent{
+    color: blue;
+
+    & > .element{
+        color: purple;
+    }
+}
+.elent{
+    color: red;
+}
+.child{
+    color: plum;
+}

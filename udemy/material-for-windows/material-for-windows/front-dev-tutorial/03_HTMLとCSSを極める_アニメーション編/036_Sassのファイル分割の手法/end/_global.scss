@@ -1,0 +1,7 @@
+@forward "child";
+@forward "child2";
+@use "child";
+
+body {
+    background: child.$cBlue;
+}

@@ -1,0 +1,27 @@
+.btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 40px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.btn-cube {
+  background-color: black;
+}
+.btn-cube .inner {
+  background-color: black;
+}
+
+#container {
+  text-align: center;
+}
+#container.btn {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */

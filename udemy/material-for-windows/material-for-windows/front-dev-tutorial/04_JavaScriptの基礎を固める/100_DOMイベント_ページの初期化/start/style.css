@@ -1,0 +1,12 @@
+@charset "UTF-8";
+strong {
+  display: block;
+  color: red;
+}
+
+.done {
+  color: green;
+}
+.done::before {
+  content: "✔";
+}/*# sourceMappingURL=style.css.map */
