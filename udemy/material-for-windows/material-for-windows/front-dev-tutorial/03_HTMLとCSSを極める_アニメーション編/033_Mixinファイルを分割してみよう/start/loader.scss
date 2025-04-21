@@ -1,35 +1,18 @@
+@use "mixin" as mxn;
+
 $cBlack: black;
 
 body {
   text-align: center;
 }
 
-@mixin animation(
-  $name,
-  $duration: 1s,
-  $timing-function: ease,
-  $delay: 0s,
-  $iteration-count: 1,
-  $direction: normal,
-  $fill-mode: forwards
-) {
-  animation: {
-    name: $name;
-    duration: $duration;
-    timing-function: $timing-function;
-    delay: $delay;
-    iteration-count: $iteration-count;
-    direction: $direction;
-    fill-mode: $fill-mode;
-  }
-}
 
 .rect {
   display: inline-block;
   width: 100px;
   height: 100px;
   background-color: $cBlack;
-  @include animation($name: sk-bouncedelay);
+  @include mxn.animation($name: sk-bouncedelay);
   // animation: sk-bouncedelay 1.4s;
   // animation-timing-function: ease;
   // animation-delay: 3s;

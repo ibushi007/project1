@@ -7,7 +7,13 @@ body {
   width: 100px;
   height: 100px;
   background-color: black;
-  animation: sk-bouncedelay 1.4s;
+  animation-name: sk-bouncedelay;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .paused {
