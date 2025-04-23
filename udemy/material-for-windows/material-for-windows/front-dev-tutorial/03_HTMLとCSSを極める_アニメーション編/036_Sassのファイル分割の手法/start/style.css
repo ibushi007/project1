@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: blue;
+}
+
+h1 {
+  color: blue;
+}
+
+h2 {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

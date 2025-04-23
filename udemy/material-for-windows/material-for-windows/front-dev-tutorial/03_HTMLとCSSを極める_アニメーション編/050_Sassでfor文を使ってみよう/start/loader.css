@@ -9,10 +9,10 @@
   border-radius: 50%;
   animation: sk-bouncedelay 1.4s infinite;
 }
-.three-dot-spinner .bounce1 {
+.three-dot-spinner div:nth-child(1) {
   animation-delay: -0.32s;
 }
-.three-dot-spinner .bounce2 {
+.three-dot-spinner div:nth-child(2) {
   animation-delay: -0.16s;
 }
 

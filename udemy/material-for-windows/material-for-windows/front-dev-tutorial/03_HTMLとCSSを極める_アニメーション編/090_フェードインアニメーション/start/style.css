@@ -1,3 +1,11 @@
+.appear.up .item {
+  transition: all 0.8s;
+  opacity: 0;
+}
+.appear.up.inview .item {
+  opacity: 1;
+}
+
 img {
   max-width: 80%;
 }/*# sourceMappingURL=style.css.map */

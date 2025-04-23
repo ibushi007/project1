@@ -1,3 +1,4 @@
+@use "sass:math";
 $cBlack: black;
 
 .three-dot-spinner {
@@ -10,14 +11,19 @@ $cBlack: black;
     background-color: $cBlack;
     border-radius: 50%;
     animation: sk-bouncedelay 1.4s infinite;
-  }
 
-  & .bounce1 {
-    animation-delay: -0.32s;
-  }
+    @for $i from 1 through 2{
+      &:nth-child(#{$i}) {
+        animation-delay: math.div(-0.32s / $i);
+        // background-image: url("/images/images#{$i}.png");
+      }
+  
+      &:nth-child(2) {
+        animation-delay: -0.16s;
+      }
 
-  & .bounce2 {
-    animation-delay: -0.16s;
+    }
+    
   }
 }
 
