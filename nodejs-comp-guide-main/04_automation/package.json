@@ -1,0 +1,21 @@
+{
+  "name": "09_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.25.2",
+    "nodemailer": "^6.7.8"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "google-auth-library": "^8.5.2",
+    "google-spreadsheet": "^3.3.0",
+    "json2csv": "^5.0.7",
+    "node-cron": "^3.0.2"
+  }
+}

@@ -1,0 +1,37 @@
+# 使い方
+# 1. 拡張機能 Rest Client(humao.rest-client) をインストール
+# 2. 下記の各リクエストの上に表示される Send Request を押すとリクエストが送信される
+# 
+# 参考
+# https://github.com/Huachao/vscode-restclient
+
+###
+GET http://localhost:8080/api/books
+
+### 
+POST http://localhost:8080/api/books
+content-type: application/json
+
+{
+  "title": "潮騒",
+  "description": "三島由紀夫",
+  "rating": 5,
+  "comment": "爽やか1"
+}
+
+###
+GET http://localhost:8080/api/books/6333eb01c73723402b0796af
+
+### 
+PATCH http://localhost:8080/api/books/6333ed5ec73723402b0796c0
+content-type: application/json
+
+{
+  "title": "ごんぎつね4",
+  "description": "これは、わたしが小さいときに、村の茂兵（もへい）というおじいさんからきいたお話です。",
+  "rating": 5,
+  "comment": "とても悲しい。編集しました。"
+}
+
+### 
+DELETE http://localhost:8080/api/books/6333ec69c73723402b0796b6

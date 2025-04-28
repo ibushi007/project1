@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Image Downloader</title>
+  </head>
+  <body>
+    <div>
+      <label>
+        Target URL: <input type="text" id="input-url" value="http://localhost:3000">
+      </label>
+      <button id="btn-get">Get</button>
+      <button id="btn-save">Save</button>
+    </div>
+    <div id="msg"></div>
+    <div id="result"></div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

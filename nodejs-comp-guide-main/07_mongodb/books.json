@@ -1,0 +1,172 @@
+[{
+  "_id": {
+    "$oid": "6334634881d8ae4ba04fbc8e"
+  },
+  "title": "潮騒",
+  "description": "三島由紀夫",
+  "rating": 2,
+  "comment": "爽やか",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664377672489"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1665755227492"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633471d481d8ae4ba04fbca9"
+  },
+  "title": "新宝島",
+  "description": "手塚治虫",
+  "rating": 3,
+  "comment": "面白い",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664381396781"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1665755323047"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6333ed5ec73723402b0796c0"
+  },
+  "title": "ごんぎつね4",
+  "description": "これは、わたしが小さいときに、村の茂兵（もへい）というおじいさんからきいたお話です。",
+  "rating": 3,
+  "comment": "とても悲しい。編集しました。",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664347486938"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1665746552802"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633548e692df1eddeed375d6"
+  },
+  "title": "水滸伝",
+  "description": "水滸伝の概要",
+  "rating": 4,
+  "comment": "りんちゅう",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664436454763"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1664863448112"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633bcc28e8223018daf09170"
+  },
+  "title": "Sassの教科書",
+  "description": "Sassについての本です。",
+  "rating": 5,
+  "comment": "本の感想。",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664863272254"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1665755281464"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "633bccbde8223018daf0917b"
+  },
+  "title": "バックエンド開発",
+  "description": "バックエンドを学びましょう。",
+  "rating": 5,
+  "comment": "エクセレント",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1664863421748"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1665755269020"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6348cb2360bfbbb3b24b6ffc"
+  },
+  "title": "潮騒",
+  "description": "三島由紀夫",
+  "rating": 4,
+  "comment": "爽やか",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665714979356"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1665755215615"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63566ef3c58f15f29410dc90"
+  },
+  "title": "潮騒",
+  "description": "三島由紀夫",
+  "rating": 5,
+  "comment": "爽やか1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666608883435"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666608883435"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635671e3fc8af6c6c5328c35"
+  },
+  "title": "潮騒",
+  "description": "三島由紀夫",
+  "rating": 5,
+  "comment": "爽やか1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666609635450"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666609635450"
+    }
+  },
+  "__v": 0
+}]

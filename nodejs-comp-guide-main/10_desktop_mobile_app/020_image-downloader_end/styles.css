@@ -1,0 +1,8 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+input,
+label,
+button {
+  font-size: 2rem;
+}
