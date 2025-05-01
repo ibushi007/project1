@@ -1,0 +1,91 @@
+{
+    // ********* デバッグの設定ファイル *********
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Current File",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}"
+        },
+        {
+            // 04_automationフォルダの.envを読み込み
+            // エディタで開いているスクリプトをデバッグ
+            "type": "node",
+            "request": "launch",
+            "name": "Launch 04_automation Program File",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}",
+            "envFile": "${workspaceFolder}/04_automation/.env"
+        },
+        {
+            // 07_mongodbフォルダの.envを読み込みスクリプトをデバッグ
+            // エディタで開いているスクリプトをデバッグ
+            "type": "node",
+            "request": "launch",
+            "name": "Launch 07_mongodb Program File",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${file}",
+            "envFile": "${workspaceFolder}/07_mongodb/.env"
+        },
+        {
+            // 08_bookshelf_backendフォルダの.envを読み込みスクリプトをデバッグ
+            // server/app.mjsからデバッグを開始
+            "type": "node",
+            "request": "launch",
+            "name": "Launch 08_bookshelf_backend Program File",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/08_bookshelf_backend/server/app.mjs",
+            "envFile": "${workspaceFolder}/08_bookshelf_backend/.env"
+        },
+        {
+            // 09_bookshelf_frontendフォルダの.envを読み込み
+            // server/app.mjsからデバッグを開始
+            "type": "node",
+            "request": "launch",
+            "name": "Launch 09_bookshelf_frontend Program File",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/09_bookshelf_frontend/server/app.mjs",
+            "envFile": "${workspaceFolder}/09_bookshelf_frontend/.env"
+        },
+        {
+            // 99_bookshelfフォルダの.envを読み込みスクリプトをデバッグ
+            // server/app.mjsからデバッグを開始
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Bookshelf Backend",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/99_bookshelf/server/app.mjs",
+            "envFile": "${workspaceFolder}/99_bookshelf/.env"
+        },
+        {
+            // 10_desktop_mobile_app/020_image-downloaderのメインプロセスデバッグ用
+            // see https://www.electronjs.org/ja/docs/latest/tutorial/debugging-vscode
+            "name": "Debug Electron 020_image-downloader Main Process",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/10_desktop_mobile_app/020_image-downloader",
+            "runtimeExecutable": "${workspaceFolder}/10_desktop_mobile_app/020_image-downloader/node_modules/.bin/electron",
+            "args": [
+                "."
+            ],
+            "outputCapture": "std"
+        }
+    ]
+}
