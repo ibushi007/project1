@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node", // Node.jsデバッガーを使用
+        "request": "launch", // 新しいプロセスを開始
+        "name": "Run Current File (Node.js)", // デバッグ構成の名前 (自由に設定可)
+        "program": "${file}", // ★★★ 現在開いているファイルを指定 ★★★
+        "skipFiles": [
+          "<node_internals>/**" // Node.jsの内部コードをスキップ
+        ],
+        "console": "integratedTerminal" // 結果を統合ターミナルに表示
+      }
+      // 他の構成があればここに追加
+    ]
+  }
