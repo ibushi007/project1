@@ -25,4 +25,31 @@ const secrets = require('../../../google_secrets.json');
 
   await doc.loadInfo();
 
+  let sheet = doc.sheetsByTitle['cart'];
+  if(!sheet){
+  const sheet = await doc.addSheet({
+    title: 'cart'
+  });
+
+  await sheet.setHeaderRow(['name','price']);
+  }
+  const newrow = await sheet.addRows([
+    {
+    name: 'Orange',
+    price: '120',
+  },
+  {
+    name: 'Banana',
+    price: '50',
+  },
+  {
+    name: 'Apple',
+    price: '100',
+  },
+  {name: '合計', price: '=sum(B2:B4)'},
+])
+
+newrow.forEach(row => async() => {
+  await row.save();
+})
 })();

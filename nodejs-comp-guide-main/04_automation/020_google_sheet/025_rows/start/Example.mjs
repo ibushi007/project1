@@ -15,4 +15,25 @@ const secrets = require('../../../google_secrets.json');
     
     await doc.loadInfo();
     
+    const parsonsheet = doc.sheetsByTitle['persons'];
+    const rows = await parsonsheet.addRows([
+        {
+        name: 'Tom',
+        age: 18,
+        gender: 'M',
+    },
+        {
+        name: 'Hanako',
+        age: 13,
+        gender: 'F',
+    },
+        {
+        name: 'John',
+        age: 20,
+        gender: 'M',
+    }
+]);
+    rows.forEach(row => async () => {
+        await row.save()
+});
 })();
