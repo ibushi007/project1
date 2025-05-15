@@ -15,10 +15,11 @@ dotenv.config();
     port: 465,
     secure: true, // SSL
     auth: {
-      user: process.env.EMAIL_FROM,
-      //googleアカウントのアプリパスワードを設定
-      // see https://support.google.com/accounts/answer/185833?hl=ja
-      pass: "",
+      type: 'OAuth2',
+      user: process.env.EMAIL_FROM,       // 送信元として表示されるGmailアドレス
+      clientId: process.env.OAUTH_CLIENT_ID,       // GCPで取得したクライアントID
+      clientSecret: process.env.OAUTH_CLIENT_SECRET, // GCPで取得したクライアントシークレット
+      refreshToken: process.env.OAUTH_REFRESH_TOKEN, // OAuth Playgroundで取得したリフレッシュトークン
     },
   };
 
