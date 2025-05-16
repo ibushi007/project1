@@ -1,11 +1,12 @@
 const path = require('path');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 const mode = process.env.NODE_ENV || 'development';
 
 module.exports = {
   mode,
+  devtool: 'source-map',
   devtool: 'source-map',
   entry: './src/js/index.js',
   output: {
@@ -38,13 +39,13 @@ module.exports = {
         test: /\.scss$/,
         include: path.resolve(__dirname, 'src/scss'),
         use: [
-          'style-loader',
-          // {
-          //   loader: MiniCssExtractPlugin.loader,
-          //   options: {
-          //     esModule: false,
-          //   },
-          // },
+          // 'style-loader',
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              esModule: false,
+            },
+          },
           'css-loader',
           'postcss-loader',
           'sass-loader',
@@ -67,9 +68,9 @@ module.exports = {
     },
   },
   plugins: [
-    // new MiniCssExtractPlugin({
-    //   filename: './css/style.css',
-    // }),
+    new MiniCssExtractPlugin({
+      filename: './css/style.css',
+    }),
     new CopyPlugin({
       patterns: [
         { from: "index.html", to: "." },
