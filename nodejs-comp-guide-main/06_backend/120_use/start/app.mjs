@@ -20,7 +20,7 @@ app.use(express.json());
 
 // ミドルウェア：ルートハンドラの前後に行われる処理
 app.use('/', function(req, res, next) {
-
+  console.log(req.url);
 });
 
 // ルートハンドラ：パスとメソッドに紐付くメインの処理

@@ -9,10 +9,10 @@
 # https://github.com/Huachao/vscode-restclient
 
 ###
-GET http://localhost:8080/products
+GET http://localhost:8080/api/products/1
 
 ### 
-POST http://localhost:8080/create-product
+POST http://localhost:8080/api/products
 content-type: application/json
 
 {
@@ -21,18 +21,13 @@ content-type: application/json
 }
 
 ### delete
-POST http://localhost:8080/delete-product
-content-type: application/json
-
-{
-  "id": 1
-}
+DELETE http://localhost:8080/api/products/1
 
 ### update
-PATCH http://localhost:8080/update-product
+# POST http://localhost:8080/update-product
+PATCH  http://localhost:8080/api/products/2
 content-type: application/json
 
 {
-  "id": 2,
   "price": 100
 }

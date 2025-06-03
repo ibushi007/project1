@@ -21,9 +21,10 @@ getAllBooks();
 async function getAllBooks() {
   const col = await getCollection();
   debugger;
-  let cursor = col.find();
+  //let cursor = col.find({ $or: [{rating: 5}, {title: 'バックエンド開発'}] });
+  let cursor = col.find({ rating: { $gte: 2, $lte: 5}}).sort({ rating: 1 });
   const result = await cursor.toArray();
   console.log(result);
 
-//   await client.close();
+  await client.close();
 }
