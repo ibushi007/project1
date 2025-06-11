@@ -17,7 +17,7 @@ async function getCollection() {
 deleteBook();
 async function deleteBook() {
   const col = await getCollection();
-  const result = await col.deleteOne({ title: "" });
+  const result = await col.deleteMany({ title: "こんにちは" });
   console.log(result);
   await client.close();
 }
